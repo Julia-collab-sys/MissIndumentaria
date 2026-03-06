@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miss Indumentaria</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#fff;
+}
+
+/* HEADER */
+
+header{
+    background:black;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f5c6d6;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* SLIDER */
+
+.slider{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    width:300%;
+    animation:slide 15s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{margin-left:0}
+    30%{margin-left:0}
+    33%{margin-left:-100%}
+    63%{margin-left:-100%}
+    66%{margin-left:-200%}
+    100%{margin-left:-200%}
+}
+
+/* TITULOS SECCIONES */
+
+.section-title{
+    text-align:center;
+    margin:50px 0 20px 0;
+    font-size:28px;
+    color:black;
+}
+
+/* PRODUCTOS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.product{
+    border:1px solid #eee;
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:10px 0;
+}
+
+.price{
+    color:#c9a227;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Miss Indumentaria</div>
+
+<nav>
+<a href="#remeras">Remeras</a>
+<a href="#guardapolvos">Guardapolvos</a>
+<a href="#bolsos">Bolsos</a>
+</nav>
+</header>
+
+
+<!-- SLIDER -->
+
+<div class="slider">
+<div class="slides">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+
+</div>
+</div>
+
+
+<!-- REMERAS -->
+
+<h2 class="section-title" id="remeras">Remeras</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1520975922324-8d3c3c0b8b0c">
+<h3>Remera Rosa</h3>
+<p class="price">$18.000</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+<h3>Remera Negra</h3>
+<p class="price">$20.000</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb">
+<h3>Remera Blanca</h3>
+<p class="price">$19.500</p>
+</div>
+
+</div>
+
+
+<!-- GUARDAPOLVOS -->
+
+<h2 class="section-title" id="guardapolvos">Guardapolvos</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1588117305388-c2631a279f82">
+<h3>Guardapolvo Escolar</h3>
+<p class="price">$25.000</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1593032465171-8e0d0d5a0b36">
+<h3>Guardapolvo Premium</h3>
+<p class="price">$32.000</p>
+</div>
+
+</div>
+
+
+<!-- BOLSOS -->
+
+<h2 class="section-title" id="bolsos">Bolsos</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7">
+<h3>Bolso Negro</h3>
+<p class="price">$21.000</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1591561954557-26941169b49e">
+<h3>Bolso Rosa</h3>
+<p class="price">$23.000</p>
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Miss Indumentaria</p>
+<p>Moda elegante para todos los días</p>
+
+</footer>
+
+</body>
+</html>
